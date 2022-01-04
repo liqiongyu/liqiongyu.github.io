@@ -3,7 +3,8 @@
         <title>李琼羽的万事屋</title>
         <link>https://liqiongyu.github.io/</link>
         <description>学习与记录，东西就有点杂乱</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 25 Nov 2016 22:56:28 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>li@libiao.co (李琼羽)</managingEditor>
+            <webMaster>li@libiao.co (李琼羽)</webMaster><lastBuildDate>Fri, 25 Nov 2016 22:56:28 &#43;0800</lastBuildDate>
             <atom:link href="https://liqiongyu.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>生活中的沉没成本和及时止损</title>
@@ -12,5 +13,12 @@
     <author>作者</author>
     <guid>https://liqiongyu.github.io/%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E6%B2%89%E6%B2%A1%E6%88%90%E6%9C%AC%E5%92%8C%E5%8F%8A%E6%97%B6%E6%AD%A2%E6%8D%9F/</guid>
     <description><![CDATA[生活中的沉没成本和及时止损 什么是沉没成本 我们在《生活中的机会成本》中介绍了机会成本，今天我们讲讲经常与机会成本混淆的沉没成本（Sunk Cos]]></description>
+</item><item>
+    <title>生活中的机会成本和明智选择</title>
+    <link>https://liqiongyu.github.io/%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E6%9C%BA%E4%BC%9A%E6%88%90%E6%9C%AC%E5%92%8C%E6%98%8E%E6%99%BA%E9%80%89%E6%8B%A9/</link>
+    <pubDate>Thu, 24 Nov 2016 23:01:08 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://liqiongyu.github.io/%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E6%9C%BA%E4%BC%9A%E6%88%90%E6%9C%AC%E5%92%8C%E6%98%8E%E6%99%BA%E9%80%89%E6%8B%A9/</guid>
+    <description><![CDATA[机会成本，又叫做选择成本。 第一次接触到得正式解释是在曼昆的《经济学原理》：“一种东西的机会成本是为了得到这种东西所放弃的东西。”在斯蒂格里茨]]></description>
 </item></channel>
 </rss>
