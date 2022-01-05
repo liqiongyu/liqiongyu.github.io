@@ -59,7 +59,6 @@ https://github.com/w392807287/Design_pattern_of_python
 22. Strategy（策略）
 23. Visitor（访问者）
 
-
 ## 创建型
 
 ### 1. Factory Method（工厂方法）
@@ -115,9 +114,13 @@ for msgid in "dog parrot cat bear".split():
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images824579-20160928181031672-1073974804.gif "抽象工厂")
 
+
+
 **意图：**
 
 提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。
+
+
 **适用性：**
 
 一个系统要独立于它的产品的创建、组合和表示时。
@@ -127,6 +130,7 @@ for msgid in "dog parrot cat bear".split():
 当你要强调一系列相关的产品对象的设计以便进行联合使用时。
 
 当你提供一个产品类库，而只想显示它们的接口而不是实现时。
+
 ```python
 # Abstract Factory
 import random
@@ -193,14 +197,17 @@ if __name__ == "__main__":
         shop.pet_factory = get_factory()
         shop.show_pet()
         print("=" * 20)
-
 ```
 
 ### 3. Builder（建造者）
 
+
+
 **意图：**
 
 将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
+
+
 
 **适用性：**
 
@@ -211,7 +218,6 @@ if __name__ == "__main__":
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images824579-20160928195334656-2085921203.gif "建造者")
 
 ```python
-
 # Builder
 # Director
 class Director(object):
@@ -282,6 +288,7 @@ if __name__ == "__main__":
 当要实例化的类是在运行时刻指定时，例如，通过动态装载；或者为了避免创建一个与产品类层次平行的工厂类层次时；或者当一个类的实例只能有几个不同状态组合中的一种时。建立相应数目的原型并克隆它们可能比每次用合适的状态手工实例化该类更方便一些。
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images824579-20160928194103188-1537654983.gif "原型")
+
 ```python
 # Prototype
 
@@ -320,7 +327,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
 ```
 
 ### 5. Singleton（单例）
@@ -338,6 +344,7 @@ if __name__ == '__main__':
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images20220105101236.png "单例")
 
 实现：
+
 ```python
 # Singleton
 
@@ -526,7 +533,6 @@ if __name__ == '__main__':
 你希望用户忽略组合对象与单个对象的不同，用户将统一地使用组合结构中的所有对象。
 
 ```python
-
 """
 Composite
 """
@@ -733,7 +739,7 @@ class Card(object):
     #     self.value, self.suit = value, suit      
 
     def __repr__(self):         
-        return "&lt;Card: %s%s&gt;" % (self.value, self.suit)      
+        return "<Card: %s%s>" % (self.value, self.suit)      
 
 if __name__ == '__main__':
     # comment __new__ and uncomment __init__ to see the difference
@@ -855,9 +861,13 @@ if __name__ == "__main__":
 ### 14. Template Method（模板方法）
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104413.png "Template Method")
+
+
 **意图：**
 
 定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。TemplateMethod使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。
+
+
 
 **适用性：**
 
@@ -923,9 +933,13 @@ for template in templates:
 ### 15. Chain of Responsibility（责任链）
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104449.png "Chain of Responsibility")
+
+
 **意图：**
 
 使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止。
+
+
 
 **适用性：**
 
@@ -936,7 +950,6 @@ for template in templates:
 可处理一个请求的对象集合应被动态指定。
 
 ```python
-
 """
 Chain
 """
@@ -985,9 +998,13 @@ if __name__ == "__main__":
 ### 16. Command（命令）
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104520.png "Command")
+
+
 **意图：**
 
 将一个请求封装为一个对象，从而使你可用不同的请求对客户进行参数化；对请求排队或记录请求日志，以及支持可撤消的操作。
+
+
 
 **适用性：**
 
@@ -1002,7 +1019,6 @@ if __name__ == "__main__":
 用构建在原语操作上的高层操作构造一个系统。这样一种结构在支持事务( transaction)的信息系统中很常见。一个事务封装了对数据的一组变动。Command模式提供了对事务进行建模的方法。Command有一个公共的接口，使得你可以用同一种方式调用所有的事务。同时使用该模式也易于添加新事务以扩展系统。
 
 ```python
-
 """
 Command
 """
@@ -1043,9 +1059,13 @@ if __name__ == "__main__":
 ### 17. Iterator（迭代器）
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104614.png "Iterator")
+
+
 **意图：**
 
 提供一种方法顺序访问一个聚合对象中各个元素,而又不需暴露该对象的内部表示。
+
+
 
 **适用性：**
 
@@ -1087,9 +1107,13 @@ print " "
 ### 18. Mediator（中介者）
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104656.png "Mediator")
+
+
 **意图：**
 
 用一个中介对象来封装一系列的对象交互。中介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。
+
+
 
 **适用性：**
 
@@ -1220,9 +1244,13 @@ if __name__ == '__main__':
 ### 19. Memento（备忘录）
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104717.png "Memento")
+
+
 **意图：**
 
 在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原先保存的状态。
+
+
 
 **适用性：**
 
@@ -1231,7 +1259,6 @@ if __name__ == '__main__':
 如果一个用接口来让其它对象直接得到这些状态，将会暴露对象的实现细节并破坏对象的封装性。
 
 ```python
-
 import copy
 
 def Memento(obj, deep=False):
@@ -1281,15 +1308,15 @@ class NumObj(object):
         self.value = value
 
     def __repr__(self):
-        return '&lt;%s: %r&gt;' % (self.__class__.__name__, self.value)
+        return '<%s: %r>' % (self.__class__.__name__, self.value)
 
     def Increment(self):
         self.value += 1
 
     @transactional
     def DoStuff(self):
-        self.value = '1111'  # &lt;- invalid value
-        self.Increment()     # &lt;- will fail and rollback
+        self.value = '1111'  # <- invalid value
+        self.Increment()     # <- will fail and rollback
 
 if __name__ == '__main__':
     n = NumObj(-1)
@@ -1314,7 +1341,7 @@ if __name__ == '__main__':
     try:
         n.DoStuff()
     except:
-        print('-&gt; doing stuff failed!')
+        print('-> doing stuff failed!')
         import traceback
         traceback.print_exc(0)
         pass
@@ -1324,9 +1351,13 @@ if __name__ == '__main__':
 ### 20. Observer（观察者）
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104733.png "Observer")
+
+
 **意图：**
 
 定义对象间的一种一对多的依赖关系,当一个对象的状态发生改变时,所有依赖于它的对象都得到通知并被自动更新。
+
+
 
 **适用性：**
 
@@ -1418,9 +1449,13 @@ if __name__ == '__main__':
 ### 21. State（状态）
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104750.png "State")
+
+
 **意图：**
 
 允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类。
+
+
 
 **适用性：**
 
@@ -1490,9 +1525,13 @@ if __name__ == '__main__':
 ### 22. Strategy（策略）
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104908.png "Strategy")
+
+
 **意图：**
 
 定义一系列的算法,把它们一个个封装起来,并且使它们可相互替换。本模式使得算法可独立于使用它的客户而变化。
+
+
 
 **适用性：**
 
@@ -1546,9 +1585,13 @@ if __name__ == '__main__':
 ### 23. Visitor（访问者）
 
 ![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104923.png "Visitor")
+
+
 **意图：**
 
 定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。TemplateMethod使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。
+
+
 
 **适用性：**
 
