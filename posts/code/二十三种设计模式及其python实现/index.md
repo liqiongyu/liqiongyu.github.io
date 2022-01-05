@@ -64,7 +64,7 @@ https://github.com/w392807287/Design_pattern_of_python
 
 ### 1. Factory Method（工厂方法）
 
-![工厂方法](/images/design_pattern/Factory_Method.png "工厂方法")
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images824579-20160928141135485-1986044710.gif "工厂方法")
 
 **意图：**
 
@@ -113,7 +113,7 @@ for msgid in "dog parrot cat bear".split():
 
 ### 2. Abstract Factory（抽象工厂）
 
-![](/images/design_pattern/Abstract_Factory.png "抽象工厂")
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images824579-20160928181031672-1073974804.gif "抽象工厂")
 
 **意图：**
 
@@ -208,7 +208,7 @@ if __name__ == "__main__":
 
 当构造过程必须允许被构造的对象有不同的表示时。
 
-![](/images/design_pattern/Builder.png "建造者")
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images824579-20160928195334656-2085921203.gif "建造者")
 
 ```python
 
@@ -281,8 +281,7 @@ if __name__ == "__main__":
 
 当要实例化的类是在运行时刻指定时，例如，通过动态装载；或者为了避免创建一个与产品类层次平行的工厂类层次时；或者当一个类的实例只能有几个不同状态组合中的一种时。建立相应数目的原型并克隆它们可能比每次用合适的状态手工实例化该类更方便一些。
 
-![](/images/design_pattern/Prototype.png "原型")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images824579-20160928194103188-1537654983.gif "原型")
 ```python
 # Prototype
 
@@ -336,8 +335,7 @@ if __name__ == '__main__':
 
 当这个唯一实例应该是通过子类化可扩展的，并且客户应该无需更改代码就能使用一个扩展的实例时。
 
-![](/images/design_pattern/Singleton.png "单例")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images20220105101236.png "单例")
 
 实现：
 ```python
@@ -371,8 +369,7 @@ if __name__ == '__main__':
 
 ### 6. Adapter Class/Object（适配器）
 
-![](/images/design_pattern/Adapter.png "适配器")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images20220105101342.png "适配器")
 **意图：**
 
 将一个类的接口转换成客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。
@@ -453,8 +450,7 @@ if __name__ == "__main__":
 
 ### 7. Bridge（桥接）
 
-![](/images/design_pattern/Bridge.png "桥接")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images20220105101402.png "桥接")
 意图：
 
 将抽象部分与它的实现部分分离，使它们都可以独立地变化。
@@ -518,8 +514,7 @@ if __name__ == '__main__':
 
 ### 8. Composite（组合）
 
-![](/images/design_pattern/Composite.png "Composite")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images20220105101423.png "Composite")
 **意图：**
 
 将对象组合成树形结构以表示"部分-整体"的层次结构。C o m p o s i t e使得用户对单个对象和组合对象的使用具有一致性。
@@ -577,8 +572,7 @@ if __name__ == "__main__":
 
 ### 9. Decorator（装饰）
 
-![](/images/design_pattern/Decorator.png "Decorator")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images20220105101449.png "Decorator")
 **意图：
 **动态地给一个对象添加一些额外的职责。就增加功能来说，Decorator模式相比生成子类更为灵活。
 **适用性：**
@@ -620,8 +614,7 @@ v.f2()
 
 ### 10. Facade（外观）
 
-![](/images/design_pattern/Facade.png "Facade")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/images20220105101630.png "Facade")
 **意图：**
 
 为子系统中的一组接口提供一个一致的界面，Facade模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
@@ -698,8 +691,7 @@ if __name__ == '__main__':
 
 ### 11. Flyweight（享元）
 
-![](/images/design_pattern/Flyweight.png "Flyweight")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105101955.png "Flyweight")
 **意图：**
 
 运用共享技术有效地支持大量细粒度的对象。
@@ -754,7 +746,7 @@ if __name__ == '__main__':
 
 ### 12. Proxy（代理）
 
-![](/images/design_pattern/Proxy.png "Proxy")
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105103218.png "Proxy")
 
 **意图：**
 
@@ -813,7 +805,7 @@ if __name__ == '__main__':
 
 ### 13. Interpreter（解释器）
 
-![](/images/design_pattern/Interpreter.png "Interpreter")
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104110.png "Interpreter")
 
 **意图：**
 
@@ -862,8 +854,7 @@ if __name__ == "__main__":
 
 ### 14. Template Method（模板方法）
 
-![](/images/design_pattern/Template_Method.png "Template Method")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104413.png "Template Method")
 **意图：**
 
 定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。TemplateMethod使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。
@@ -931,8 +922,7 @@ for template in templates:
 
 ### 15. Chain of Responsibility（责任链）
 
-![](/images/design_pattern/Chain_of_Responsibility.png "Chain of Responsibility")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104449.png "Chain of Responsibility")
 **意图：**
 
 使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止。
@@ -994,8 +984,7 @@ if __name__ == "__main__":
 
 ### 16. Command（命令）
 
-![](/images/design_pattern/Command.png "Command")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104520.png "Command")
 **意图：**
 
 将一个请求封装为一个对象，从而使你可用不同的请求对客户进行参数化；对请求排队或记录请求日志，以及支持可撤消的操作。
@@ -1053,8 +1042,7 @@ if __name__ == "__main__":
 
 ### 17. Iterator（迭代器）
 
-![](/images/design_pattern/Iterator.png "Iterator")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104614.png "Iterator")
 **意图：**
 
 提供一种方法顺序访问一个聚合对象中各个元素,而又不需暴露该对象的内部表示。
@@ -1098,8 +1086,7 @@ print " "
 
 ### 18. Mediator（中介者）
 
-![](/images/design_pattern/Mediator.png "Mediator")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104656.png "Mediator")
 **意图：**
 
 用一个中介对象来封装一系列的对象交互。中介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。
@@ -1232,8 +1219,7 @@ if __name__ == '__main__':
 
 ### 19. Memento（备忘录）
 
-![](/images/design_pattern/Memento.png "Memento")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104717.png "Memento")
 **意图：**
 
 在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原先保存的状态。
@@ -1337,8 +1323,7 @@ if __name__ == '__main__':
 
 ### 20. Observer（观察者）
 
-![](/images/design_pattern/Observer.png "Observer")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104733.png "Observer")
 **意图：**
 
 定义对象间的一种一对多的依赖关系,当一个对象的状态发生改变时,所有依赖于它的对象都得到通知并被自动更新。
@@ -1432,8 +1417,7 @@ if __name__ == '__main__':
 
 ### 21. State（状态）
 
-![](/images/design_pattern/State.png "State")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104750.png "State")
 **意图：**
 
 允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类。
@@ -1505,8 +1489,7 @@ if __name__ == '__main__':
 
 ### 22. Strategy（策略）
 
-![](/images/design_pattern/Strategy.png "Strategy")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104908.png "Strategy")
 **意图：**
 
 定义一系列的算法,把它们一个个封装起来,并且使它们可相互替换。本模式使得算法可独立于使用它的客户而变化。
@@ -1562,8 +1545,7 @@ if __name__ == '__main__':
 
 ### 23. Visitor（访问者）
 
-![](/images/design_pattern/Visitor.png "Visitor")
-
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/20220105104923.png "Visitor")
 **意图：**
 
 定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。TemplateMethod使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。
@@ -1626,4 +1608,4 @@ visitor.visit(c)
 
 微信公众号：
 
-![](/images/qrcode_for_琼羽万事屋_12.jpeg "琼羽万事屋")
+![](https://litibaba-picture-bed.oss-cn-shanghai.aliyuncs.com/images/qrcode_for_%E7%90%BC%E7%BE%BD%E4%B8%87%E4%BA%8B%E5%B1%8B_8.jpeg "琼羽万事屋")
