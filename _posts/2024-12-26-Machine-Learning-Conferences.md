@@ -48,7 +48,6 @@ This project lists the Machine Learning and Data Mining related conferences with
 
 ## Recent Conferences
 
-<div align="center" style="overflow-x:auto;">
 | Conference|When|Where|Deadline|Homepage| Status |
 |:----|:----|:----|:----|:----:|:----:|
 | ICML | Jul 11 - 19, 2025 | Vancouver, BC, Canada  | Jan 31, 2025 | [🔗](https://icml.cc/)|  Open |
@@ -65,10 +64,8 @@ This project lists the Machine Learning and Data Mining related conferences with
 | MLSys | May 12 - 15, 2025 | Santa Clara, CA, US | Oct 31, 2024 | [🔗](https://mlsys.org/Conferences/2025/Dates) | Closed |
 | ICSE | April 27 - May 3, 2025| Ontario, Canada | Nov 11, 2024 | [🔗](https://conf.researchr.org/home/icse-2025)| Closed |
 
-</div>
 
 Check [Acceptance rates for the major top-tier AI-related conferences](https://github.com/lixin4ever/Conference-Acceptance-Rate).
-
 
 
 ## AI & ML
@@ -76,7 +73,6 @@ Check [Acceptance rates for the major top-tier AI-related conferences](https://g
 
 International Conference on Machine Learning. [\[DBLP\]](http://dblp.uni-trier.de/db/conf/icml/index.html).
 
-<details><div align="center" style="overflow-x:auto;">
 
 Year|When|Where|Deadline|Homepage
 |:----|:----|:----|:----|:----:|
@@ -93,15 +89,12 @@ Year|When|Where|Deadline|Homepage
 2010 | Jun 21, 2010 - Jun 24, 2010 | Haifa, Israel | Feb 1, 2010 | [🔗](http://www.icml2010.org/)
 2009 | Jun 14, 2009 - Jun 18, 2009 | Montreal, Canada | Jan 26, 2009 | [🔗](http://www.cs.mcgill.ca/~icml2009/)
 2008 | Jul 6, 2008 - Jul 9, 2008 | Helsinki, Finland | Feb 8, 2008 | [🔗](http://icml2008.cs.helsinki.fi)
-</div>
 
-</details>
 
 ### NeurIPS
 
 Neural Information Processing Systems. [\[DBLP\]](http://dblp.uni-trier.de/db/conf/nips/index.html).
 
-<details><div align="center" style="overflow-x:auto;">
 
 Year|When|Where|Deadline|Homepage
 |:----|:----|:----|:----|:----:|
@@ -113,9 +106,7 @@ Year|When|Where|Deadline|Homepage
 2019 | Dec 10, 2019 - Dec 12, 2019 | Vancouver, Canada | May 23, 2019 (May 16, 2019) | [🔗](https://neurips.cc/Conferences/2019)
 2018 | Dec 3, 2018 - Dec 8, 2018 | Montreal, CANADA | May 18, 2018 | [🔗](https://nips.cc/Conferences/2018)
 2017 | Dec 4, 2017 - Dec 9, 2017 | Long Beach, CA, USA | May 19, 2017 | [🔗](https://nips.cc/Conferences/2017)
-</div>
 
-</details>
 
 ### ICLR
 
