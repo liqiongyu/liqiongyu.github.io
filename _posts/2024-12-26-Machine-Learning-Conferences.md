@@ -48,6 +48,7 @@ This project lists the Machine Learning and Data Mining related conferences with
 
 ## Recent Conferences
 
+<div align="center" style="overflow-x:auto;">
 | Conference|When|Where|Deadline|Homepage| Statuss |
 |:----|:----|:----|:----|:----:|:----:|
 | ICML | Jul 11 - 19, 2025 | Vancouver, BC, Canada  | Jan 31, 2025 | [🔗](https://icml.cc/)|  Open |
@@ -64,16 +65,10 @@ This project lists the Machine Learning and Data Mining related conferences with
 | MLSys | May 12 - 15, 2025 | Santa Clara, CA, US | Oct 31, 2024 | [🔗](https://mlsys.org/Conferences/2025/Dates) | Closed |
 | ICSE | April 27 - May 3, 2025| Ontario, Canada | Nov 11, 2024 | [🔗](https://conf.researchr.org/home/icse-2025)| Closed |
 
+</div>
 
 Check [Acceptance rates for the major top-tier AI-related conferences](https://github.com/lixin4ever/Conference-Acceptance-Rate).
 
-
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
 
 
 ## AI & ML
