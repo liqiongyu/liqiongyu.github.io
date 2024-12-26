@@ -63,13 +63,7 @@ This project lists the Machine Learning and Data Mining related conferences with
 | KDD | Aug 3 - 7, 2025 | Toronto, ON, Canada | Aug 8, 2024 (Aug 1, 2024) | [🔗](https://kdd2025.kdd.org/)|  Closed |
 | MLSys | May 12 - 15, 2025 | Santa Clara, CA, US | Oct 31, 2024 | [🔗](https://mlsys.org/Conferences/2025/Dates) | Closed |
 | ICSE | April 27 - May 3, 2025| Ontario, Canada | Nov 11, 2024 | [🔗](https://conf.researchr.org/home/icse-2025)| Closed |
-<!-- PAKDD | May 7 - May 10, 2024 |  | Nov 29, 2024 | [🔗](https://pakdd2025.org/) -->
-<!-- ECCV | Sep 29, 2024 - Oct 4, 2024 | MiCo Milano, Milan, Italy | Mar 7, 2024 (Feb 29, 2024) | [🔗](https://eccv2024.ecva.net/)
-MICCAI | Oct 6, 2024 - Oct 10, 2024 | MARRAKESH / MOROCCO | Mar 7, 2024 (Feb 22, 2024) | [🔗](https://conferences.miccai.org/2024/en/)
-CIKM | Oct 21, 2024 - Oct 25, 2024 | Boise, ID, USA  | May 20, 2024 (May 13, 2024) | [🔗](http://cikm2024.org)
-NeurIPS | Dec 9, 2024 - Dec 15, 2024 | Vancouver, Canada | May 22, 2024 (May 15, 2024) | [🔗](https://neurips.cc/Conferences/2024) 
-ASE | Sep 29, 2024 - Oct 4, 2024 | Sacramento United States  | Jun 7, 2024 (May 31, 2024) | [🔗](https://conf.researchr.org/home/ase-2024)
--->
+
 
 Check [Acceptance rates for the major top-tier AI-related conferences](https://github.com/lixin4ever/Conference-Acceptance-Rate).
 
