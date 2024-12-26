@@ -48,8 +48,6 @@ This project lists the Machine Learning and Data Mining related conferences with
 
 ## Recent Conferences
 
-<!-- <div align="center" style="overflow-x:auto;"> -->
-
 | Conference|When|Where|Deadline|Homepage| Deadline|
 |:----|:----|:----|:----|:----:|:----:|
 | ICML | Jul 11 - 19, 2025 | Vancouver, BC, Canada  | Jan 31, 2025 | [🔗](https://icml.cc/)|  Open |
@@ -72,11 +70,9 @@ CIKM | Oct 21, 2024 - Oct 25, 2024 | Boise, ID, USA  | May 20, 2024 (May 13, 202
 NeurIPS | Dec 9, 2024 - Dec 15, 2024 | Vancouver, Canada | May 22, 2024 (May 15, 2024) | [🔗](https://neurips.cc/Conferences/2024) 
 ASE | Sep 29, 2024 - Oct 4, 2024 | Sacramento United States  | Jun 7, 2024 (May 31, 2024) | [🔗](https://conf.researchr.org/home/ase-2024)
 -->
-<!-- </div> -->
 
 Check [Acceptance rates for the major top-tier AI-related conferences](https://github.com/lixin4ever/Conference-Acceptance-Rate).
 
-<div align="center" style="overflow-x:auto;">
 
 | Number | Next number | Previous number |
 | :------ |:--- | :--- |
@@ -85,7 +81,6 @@ Check [Acceptance rates for the major top-tier AI-related conferences](https://g
 | Seven | Eight | Six |
 | Two | Three | One |
 
-</div>
 
 ## AI & ML
 ### ICML
