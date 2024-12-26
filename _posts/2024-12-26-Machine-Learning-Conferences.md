@@ -48,7 +48,7 @@ This project lists the Machine Learning and Data Mining related conferences with
 
 ## Recent Conferences
 
-| Conference|When|Where|Deadline|Homepage| Deadline|
+| Conference|When|Where|Deadline|Homepage| Status|
 |:----|:----|:----|:----|:----:|:----:|
 | ICML | Jul 11 - 19, 2025 | Vancouver, BC, Canada  | Jan 31, 2025 | [🔗](https://icml.cc/)|  Open |
 | IJCAI | Aug 16 - Aug 22, 2025 | Montreal, Canada | Jan 16 (Jan 23), 2025 |[🔗](https://2025.ijcai.org/) | Open |
