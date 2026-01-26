@@ -8,6 +8,7 @@
 Thumbs.db
 .idea/
 .vscode/
+.codex/
 
 # Node / Pagefind (if you later add npm tooling)
 node_modules/
