@@ -77,11 +77,12 @@ enableRobotsTXT = true
   listDateFormat = "2006-01-02"
 
   # UI
-  breadcrumbs = true
+  # Breadcrumbs (Typo v3 expects a table, not a boolean)
 
   # Social (optional)
-  [params.social]
-    github = "https://github.com/liqiongyu"
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/liqiongyu"
     # twitter = "https://twitter.com/..."
     # linkedin = "https://linkedin.com/in/..."
 
@@ -112,6 +113,10 @@ enableRobotsTXT = true
     weight = 1
     # Per-language params
     [languages.zh.params]
+      [languages.zh.params.breadcrumbs]
+        enabled = true
+        showCurrentPage = true
+        home = "首页"
       giscusLang = "zh-CN"
       homeIntroTitle = "你好，我是李琼羽"
       homeIntroContent = "这里记录技术、论文阅读与日常思考。"
@@ -147,6 +152,10 @@ enableRobotsTXT = true
     title = "liqiongyu"
     weight = 2
     [languages.en.params]
+      [languages.en.params.breadcrumbs]
+        enabled = true
+        showCurrentPage = true
+        home = "Home"
       giscusLang = "en"
       homeIntroTitle = "Hi, I'm liqiongyu"
       homeIntroContent = "Technical posts, paper notes, and occasional philosophy & daily thoughts."

@@ -1,0 +1,27 @@
+{{/* Header (override Typo theme) */}}
+
+<div class="header">
+
+  {{ if or (not (.Param "hideHeader")) .IsHome }}
+
+    <h1 class="header-title">
+      <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+    </h1>
+
+    <div class="header-menu">
+      {{ $currentPage := . }}
+
+      {{ with site.Menus.main }}
+        {{ range . }}
+          <p class="small {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} bold {{ end }}">
+            <a href="{{ .URL }}"{{ if .Params.newTab }} target="_blank" rel="noopener noreferrer"{{ end }}>
+              /{{ .Name }}
+            </a>
+          </p>
+        {{ end }}
+      {{ end }}
+    </div>
+
+  {{ end }}
+
+</div>
