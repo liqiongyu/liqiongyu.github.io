@@ -1,0 +1,184 @@
+baseURL = "https://blog.liqiongyu.com/"
+title = "李琼羽"
+theme = "typo"
+
+# Hugo multilingual
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = false
+hasCJKLanguage = true
+
+# Useful for "lastmod" via git history (optional)
+enableGitInfo = true
+
+
+enableRobotsTXT = true
+# Hugo caches (recommended for GitHub Actions builds)
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  # category = "categories"   # optional
+  # series = "series"         # optional
+
+# Outputs (RSS, etc.)
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+# Markdown / syntax highlight
+[markup]
+  [markup.highlight]
+    # Typo v3 requires this (see v3.0.0 release notes)
+    noClasses = false
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # allow raw HTML in Markdown (needed for some shortcodes)
+      unsafe = true
+
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          # block math:
+          block = [['\[', '\]'], ['$$', '$$']]
+          # inline math:
+          inline = [['\(', '\)']]
+
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+
+# ----------------
+# Theme parameters
+# ----------------
+[params]
+  author = "李琼羽"
+  email = "libiao_0303@live.com"
+  description = "李琼羽的个人博客：技术、论文笔记、哲学与日常思考。"
+  # Typo options (keep minimal; extend when needed)
+  colorPalette = "default"
+
+  # Home page
+  homeIntroTitle = "你好 👋"
+  homeIntroContent = "这里是一个长期可维护、内容为中心的个人站点。"
+  homeCollectionTitle = "最新内容"
+  # Hugo section name to show on home
+  homeCollection = "posts"
+
+  # List pages
+  paginationSize = 10
+  listSummaries = true
+  listDateFormat = "2006-01-02"
+
+  # UI
+  breadcrumbs = true
+
+  # Social (optional)
+  [params.social]
+    github = "https://github.com/liqiongyu"
+    # twitter = "https://twitter.com/..."
+    # linkedin = "https://linkedin.com/in/..."
+
+  # giscus settings used by the {{< comments >}} shortcode
+  [params.giscus]
+    enabled = true
+    repo = "liqiongyu/site-comments"
+    repoId = "R_kgDORBYxGA"
+    category = "Announcements"
+    categoryId = "DIC_kwDORBYxGM4C1cIs"
+
+    # giscus behavior
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "bottom"
+    theme = "preferred_color_scheme"
+    loading = "lazy"
+    strict = "0" # optional; see giscus docs
+
+# ----------------
+# Languages
+# ----------------
+[languages]
+  [languages.zh]
+    languageName = "中文"
+    languageCode = "zh-CN"
+    title = "李琼羽"
+    weight = 1
+    # Per-language params
+    [languages.zh.params]
+      giscusLang = "zh-CN"
+      homeIntroTitle = "你好，我是李琼羽"
+      homeIntroContent = "这里记录技术、论文阅读与日常思考。"
+      homeCollectionTitle = "最新内容"
+      homeCollection = "posts"
+    # Menu (use pageRef so Hugo resolves per-language URLs)
+      author = "李琼羽"
+      description = "李琼羽的个人博客：技术、论文笔记、哲学与日常思考。"
+[[languages.zh.menu.main]]
+      name = "文章"
+      pageRef = "/posts"
+      weight = 10
+    [[languages.zh.menu.main]]
+      name = "论文"
+      pageRef = "/papers"
+      weight = 20
+    [[languages.zh.menu.main]]
+      name = "笔记"
+      pageRef = "/notes"
+      weight = 30
+    [[languages.zh.menu.main]]
+      name = "搜索"
+      pageRef = "/search"
+      weight = 40
+    [[languages.zh.menu.main]]
+      name = "关于"
+      pageRef = "/about"
+      weight = 90
+
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    title = "liqiongyu"
+    weight = 2
+    [languages.en.params]
+      giscusLang = "en"
+      homeIntroTitle = "Hi, I'm liqiongyu"
+      homeIntroContent = "Technical posts, paper notes, and occasional philosophy & daily thoughts."
+      homeCollectionTitle = "Latest"
+      homeCollection = "posts"
+      author = "liqiongyu"
+      description = "liqiongyu's personal blog: tech, paper notes, philosophy, and daily thoughts."
+[[languages.en.menu.main]]
+      name = "Posts"
+      pageRef = "/posts"
+      weight = 10
+    [[languages.en.menu.main]]
+      name = "Papers"
+      pageRef = "/papers"
+      weight = 20
+    [[languages.en.menu.main]]
+      name = "Notes"
+      pageRef = "/notes"
+      weight = 30
+    [[languages.en.menu.main]]
+      name = "Search"
+      pageRef = "/search"
+      weight = 40
+    [[languages.en.menu.main]]
+      name = "About"
+      pageRef = "/about"
+      weight = 90
+
+# ----------------
+# OPTIONAL: Use Typo as a Hugo Module instead of submodule
+# (Uncomment and adjust if you prefer Hugo Modules)
+#
+# [module]
+#   [[module.imports]]
+#     path = "github.com/tomfran/typo/v3"

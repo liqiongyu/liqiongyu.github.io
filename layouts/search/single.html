@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  {{ with .Content }}
+    <div class="page-content">
+      {{ . }}
+    </div>
+  {{ end }}
+
+  <div id="search" data-pagefind-ignore="all"></div>
+
+  <!-- Pagefind UI (generated into /pagefind/ by `npx pagefind --site public`) -->
+  <link href="{{ "pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
+  <script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (!window.PagefindUI) return;
+
+      new PagefindUI({
+        element: "#search",
+        bundlePath: "{{ "pagefind/" | relURL }}",
+
+        // Optional: fallback normalization. Keep it minimal by default.
+        // processTerm: (term) => term,
+      });
+    });
+  </script>
+{{ end }}

@@ -1,0 +1,10 @@
+{{- $file := .Get "file" -}}
+{{- $text := .Get "text" | default $file -}}
+{{- $class := .Get "class" | default "attachment-link" -}}
+
+{{- with .Page.Resources.GetMatch $file -}}
+  <a class="{{ $class }}" href="{{ .RelPermalink }}">{{ $text }}</a>
+{{- else -}}
+  {{- /* Fallback: treat as static/ or absolute path */ -}}
+  <a class="{{ $class }}" href="{{ $file | relURL }}">{{ $text }}</a>
+{{- end -}}

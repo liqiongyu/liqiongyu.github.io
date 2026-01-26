@@ -1,0 +1,13 @@
+{{- /* Passthrough render hook
+      Captures text inside configured delimiters (\(...\), \[...\], $$...$$)
+      and renders with Hugo's transform.ToMath (KaTeX) at build time.
+*/ -}}
+
+{{- .Page.Store.Set "hasMath" true -}}
+
+{{- if eq .Type "block" -}}
+  {{- $opts := dict "displayMode" true -}}
+  {{- transform.ToMath .Inner $opts -}}
+{{- else if eq .Type "inline" -}}
+  {{- transform.ToMath .Inner -}}
+{{- end -}}

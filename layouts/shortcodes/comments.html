@@ -1,0 +1,28 @@
+{{- $g := .Site.Params.giscus -}}
+{{- if not $g.enabled -}}
+  {{- /* giscus disabled: do nothing */ -}}
+{{- else -}}
+
+<div class="comments" id="giscus_thread"></div>
+
+<script src="https://giscus.app/client.js"
+  data-repo="{{ $g.repo }}"
+  data-repo-id="{{ $g.repoId }}"
+  data-category="{{ $g.category }}"
+  data-category-id="{{ $g.categoryId }}"
+  data-mapping="specific"
+  data-term="{{ .Page.TranslationKey }}"
+  data-strict="{{ $g.strict }}"
+  data-reactions-enabled="{{ $g.reactionsEnabled }}"
+  data-emit-metadata="{{ $g.emitMetadata }}"
+  data-input-position="{{ $g.inputPosition }}"
+  data-theme="{{ $g.theme }}"
+  data-lang="{{ .Site.Params.giscusLang | default .Site.Language.Lang }}"
+  data-loading="{{ $g.loading }}"
+  crossorigin="anonymous"
+  async>
+</script>
+
+<noscript>请启用 JavaScript 以加载评论。</noscript>
+
+{{- end -}}
