@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-I'm **liqiongyu** (Chinese name: 李琼羽). This site is for long-term writing and notes:
+I'm **Qiongyu Li** (Chinese: 李琼羽). This site is for long-term writing and notes:
 
 - Engineering / tech
 - Paper reading notes
@@ -10,5 +10,5 @@ I'm **liqiongyu** (Chinese name: 李琼羽). This site is for long-term writing 
 
 Links:
 
+- Home: <a href="https://blog.liqiongyu.com/">blog.liqiongyu.com</a>
 - GitHub: <a href="https://github.com/liqiongyu">liqiongyu</a>
-- Email: <a href="mailto:libiao_0303@live.com">libiao_0303@live.com</a>

@@ -1,4 +1,4 @@
-./scripts/dev.sh#!/usr/bin/env bash
+#!/usr/bin/env bash
 set -euo pipefail
 
 # Create a bilingual page bundle:

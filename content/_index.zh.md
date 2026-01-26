@@ -2,9 +2,10 @@
 title: "首页"
 ---
 
-你好，我是李琼羽。
+你好，我是李琼羽（Qiongyu Li）。
 
 这里主要发布技术文章、论文笔记，以及一些哲学与日常思考。内容以 Markdown 为主，支持数学公式、图片/SVG、PDF/附件下载。
 
 - 想看英文内容：请切换到导航中的 “English”（或直接访问 `/en/`）
 - 想快速定位内容：请使用 “搜索”
+- GitHub：<a href="https://github.com/liqiongyu">liqiongyu</a>
