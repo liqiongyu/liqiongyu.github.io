@@ -1,7 +1,7 @@
 ---
 title: "（中文标题）my-first-post"
 date: 2026-01-26T11:09:23Z
-draft: true
+draft: false
 translationKey: "posts/my-first-post"
 tags: []
 summary: ""
