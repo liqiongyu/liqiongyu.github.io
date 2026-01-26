@@ -20,6 +20,36 @@
           </p>
         {{ end }}
       {{ end }}
+
+      {{/* Language switch */}}
+      {{ if gt (len site.Languages) 1 }}
+        {{ range (where site.Sites "Language.Lang" "ne" site.Language.Lang) }}
+          {{ $targetURL := "" }}
+
+          {{ $translated := where $currentPage.Translations "Language.Lang" "eq" .Language.Lang }}
+          {{ with $translated }}
+            {{ $targetURL = (index . 0).RelPermalink }}
+          {{ end }}
+
+          {{ if eq $targetURL "" }}
+            {{ if $currentPage.IsHome }}
+              {{ $targetURL = .Home.RelPermalink }}
+            {{ else if eq $currentPage.Kind "section" }}
+              {{ with .GetPage "section" $currentPage.Section }}
+                {{ $targetURL = .RelPermalink }}
+              {{ else }}
+                {{ $targetURL = .Home.RelPermalink }}
+              {{ end }}
+            {{ else }}
+              {{ $targetURL = .Home.RelPermalink }}
+            {{ end }}
+          {{ end }}
+
+          <p class="small">
+            <a href="{{ $targetURL }}">/{{ .Language.LanguageName }}</a>
+          </p>
+        {{ end }}
+      {{ end }}
     </div>
 
   {{ end }}
