@@ -84,12 +84,13 @@ gh repo edit liqiongyu/liqiongyu.github.io \
 gh api -X PUT repos/liqiongyu/liqiongyu.github.io/actions/permissions/workflow \
   -f default_workflow_permissions=write
 
-# Pages: 创建/启用 Pages，并使用 GitHub Actions 构建（build_type=workflow）
-gh api -X POST repos/liqiongyu/liqiongyu.github.io/pages \
+# Pages: 使用 GitHub Actions 构建（build_type=workflow）
+# user-site 仓库（*.github.io）通常会默认启用 Pages（legacy），这里用 PUT 切到 workflow。
+gh api -X PUT repos/liqiongyu/liqiongyu.github.io/pages \
   -f build_type=workflow
 ```
 
-> 如果你看到 “Already exists” 或类似提示，说明 Pages 已经启用；可以忽略。
+> 提示：如果你在非 user-site 仓库上遇到 “Not Found / Pages 未启用”，先在网页 Settings → Pages 打开一次 Pages，再回到这里执行命令。
 
 ### 4.3 你仍需要在 GitHub 网页上确认的 1 个地方
 
