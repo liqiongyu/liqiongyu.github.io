@@ -2,10 +2,10 @@
 set -euo pipefail
 
 # Create a bilingual page bundle:
-#   ./scripts/new-bundle.sh posts my-first-post
+#   ./scripts/new-bundle.sh posts my-new-post
 # Creates:
-#   content/posts/my-first-post/index.zh.md
-#   content/posts/my-first-post/index.en.md
+#   content/posts/my-new-post/index.zh.md
+#   content/posts/my-new-post/index.en.md
 
 if [ "$#" -ne 2 ]; then
   echo "Usage: $0 <section> <slug>"

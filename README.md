@@ -56,7 +56,7 @@ hugo mod get -u
 脚本会创建 Page Bundle 目录，并生成 `index.zh.md` + `index.en.md`，同时写入相同的 `translationKey`，并在文末放入 `{{< comments >}}`。
 
 ```bash
-./scripts/new-bundle.sh posts my-first-post
+./scripts/new-bundle.sh posts my-new-post
 ```
 
 你也可以把 `posts` 换成 `papers` / `notes` / `philosophy` 等 section。

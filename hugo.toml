@@ -113,18 +113,18 @@ enableRobotsTXT = true
     weight = 1
     # Per-language params
   [languages.zh.params]
-      [languages.zh.params.breadcrumbs]
-        enabled = true
-        showCurrentPage = true
-        home = "首页"
-      giscusLang = "zh-CN"
-      homeIntroTitle = "你好，我是李琼羽（Qiongyu Li）"
-      homeIntroContent = "这里记录技术、论文阅读与日常思考。"
-      homeCollectionTitle = "最新内容"
-      homeCollection = "posts"
-    # Menu (use pageRef so Hugo resolves per-language URLs)
-      author = "李琼羽"
-      description = "李琼羽的个人博客：技术、论文笔记、哲学与日常思考。"
+    giscusLang = "zh-CN"
+    homeIntroTitle = "你好，我是李琼羽（Qiongyu Li）"
+    homeIntroContent = "这里记录技术、论文阅读与日常思考。"
+    homeCollectionTitle = "最新内容"
+    homeCollection = "posts"
+    author = "李琼羽"
+    description = "李琼羽的个人博客：技术、论文笔记、哲学与日常思考。"
+
+    [languages.zh.params.breadcrumbs]
+      enabled = true
+      showCurrentPage = true
+      home = "首页"
 [[languages.zh.menu.main]]
       name = "文章"
       pageRef = "/posts"
@@ -152,10 +152,6 @@ enableRobotsTXT = true
     title = "Qiongyu Li"
     weight = 2
     [languages.en.params]
-      [languages.en.params.breadcrumbs]
-        enabled = true
-        showCurrentPage = true
-        home = "Home"
       giscusLang = "en"
       homeIntroTitle = "Hi, I'm Qiongyu Li"
       homeIntroContent = "Technical posts, paper notes, and occasional philosophy & daily thoughts."
@@ -163,6 +159,11 @@ enableRobotsTXT = true
       homeCollection = "posts"
       author = "Qiongyu Li"
       description = "Qiongyu Li's personal blog: tech, paper notes, philosophy, and daily thoughts."
+
+      [languages.en.params.breadcrumbs]
+        enabled = true
+        showCurrentPage = true
+        home = "Home"
 [[languages.en.menu.main]]
       name = "Posts"
       pageRef = "/posts"
