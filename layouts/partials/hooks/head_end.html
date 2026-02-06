@@ -13,21 +13,25 @@
 {{- $fzRegular := "static/fonts/FZLanTingSong/FZLanTingSong-Regular.woff2" -}}
 {{- $fzSemiBold := "static/fonts/FZLanTingSong/FZLanTingSong-SemiBold.woff2" -}}
 {{- if or (fileExists $fzRegular) (fileExists $fzSemiBold) -}}
-  {{- if fileExists $fzRegular -}}
-    <link rel="preload"
-          href="/fonts/FZLanTingSong/FZLanTingSong-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossorigin>
-  {{- end -}}
-  {{- if fileExists $fzSemiBold -}}
-    <link rel="preload"
-          href="/fonts/FZLanTingSong/FZLanTingSong-SemiBold.woff2"
-          as="font"
-          type="font/woff2"
-          crossorigin>
+  {{- /* Only preload for Chinese pages to avoid downloading a large CJK font on /en/. */ -}}
+  {{- if eq .Site.Language.Lang "zh" -}}
+    {{- if fileExists $fzRegular -}}
+      <link rel="preload"
+            href="/fonts/FZLanTingSong/FZLanTingSong-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin>
+    {{- end -}}
+    {{- if fileExists $fzSemiBold -}}
+      <link rel="preload"
+            href="/fonts/FZLanTingSong/FZLanTingSong-SemiBold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin>
+    {{- end -}}
   {{- end -}}
   <style>
+    {{- if fileExists $fzRegular -}}
     @font-face {
       font-family: "FZLanTingSongWeb";
       src: url("/fonts/FZLanTingSong/FZLanTingSong-Regular.woff2") format("woff2");
@@ -35,6 +39,8 @@
       font-style: normal;
       font-display: swap;
     }
+    {{- end -}}
+    {{- if fileExists $fzSemiBold -}}
     @font-face {
       font-family: "FZLanTingSongWeb";
       src: url("/fonts/FZLanTingSong/FZLanTingSong-SemiBold.woff2") format("woff2");
@@ -42,6 +48,7 @@
       font-style: normal;
       font-display: swap;
     }
+    {{- end -}}
   </style>
 {{- end -}}
 
