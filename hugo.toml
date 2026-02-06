@@ -62,7 +62,7 @@ enableRobotsTXT = true
   email = "libiao_0303@live.com"
   description = "李琼羽的个人博客：技术、论文笔记、哲学与日常思考。"
   # Typo options (keep minimal; extend when needed)
-  colorPalette = "default"
+  colorPalette = "ivory"
 
   # Home page
   homeIntroTitle = "你好 👋"

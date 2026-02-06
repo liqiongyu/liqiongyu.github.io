@@ -15,7 +15,7 @@
         {{ range . }}
           <p class="small {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} bold {{ end }}">
             <a href="{{ .URL }}"{{ if .Params.newTab }} target="_blank" rel="noopener noreferrer"{{ end }}>
-              /{{ .Name }}
+              {{ .Name }}
             </a>
           </p>
         {{ end }}
@@ -46,7 +46,7 @@
           {{ end }}
 
           <p class="small">
-            <a href="{{ $targetURL }}">/{{ .Language.LanguageName }}</a>
+            <a href="{{ $targetURL }}">{{ .Language.LanguageName }}</a>
           </p>
         {{ end }}
       {{ end }}

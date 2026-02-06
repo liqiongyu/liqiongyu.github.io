@@ -1,0 +1,14 @@
+:root {
+  /* Warm ivory palette inspired by Anthropic Engineering. */
+  --content-primary-light: rgb(20, 20, 19);
+  --content-secondary-light: rgb(92, 92, 88);
+  --background-light: rgb(250, 249, 245);
+  --code-background-light: rgb(240, 238, 230);
+  --code-border-light: rgb(232, 230, 220);
+
+  --content-primary-dark: rgb(238, 236, 228);
+  --content-secondary-dark: rgb(170, 168, 160);
+  --background-dark: rgb(15, 15, 14);
+  --code-background-dark: rgb(28, 27, 25);
+  --code-border-dark: rgb(52, 50, 45);
+}
