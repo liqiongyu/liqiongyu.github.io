@@ -8,20 +8,20 @@
   --toc-width: clamp(180px, 16vw, 240px);
   --toc-gap: 64px;
 
-  --main-width: 1120px;
+  --main-width: 1440px;
   --main-padding: 2rem;
   --main-padding-bottom: 4rem;
 
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
     "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial,
     sans-serif;
-  --font-body: "Literata", ui-serif, Georgia, Cambria, "Noto Serif", "Noto Serif CJK SC",
-    "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  /* Use sans for long-form reading (closer to Anthropic Engineering). */
+  --font-body: var(--font-sans);
   --font-mono: "Monaspace", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 
-  --p-font-size: 17px;
-  --p-line-height: 26px;
+  --p-font-size: 18px;
+  --p-line-height: 1.7;
   --p-margin-top: 0;
   --p-margin-bottom: 16px;
 
@@ -47,6 +47,8 @@ body {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   word-break: break-word;
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
 }
 
 h1,
@@ -169,12 +171,15 @@ a {
   margin-right: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   article:has(aside.toc) {
     display: grid;
-    grid-template-columns: minmax(0, var(--toc-width)) minmax(0, var(--reading-width));
+    grid-template-columns:
+      minmax(var(--toc-width), 1fr)
+      minmax(0, var(--reading-width))
+      minmax(var(--toc-width), 1fr);
     column-gap: var(--toc-gap);
-    justify-content: center;
+    width: 100%;
   }
 
   article:has(aside.toc) > .single-intro-container,
@@ -188,6 +193,8 @@ a {
     position: sticky;
     top: calc(2rem + 48px);
     align-self: start;
+    justify-self: end;
+    width: var(--toc-width);
     max-height: calc(100vh - 6rem);
     overflow: auto;
   }
@@ -198,7 +205,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
   article > aside.toc {
     display: none;
   }
@@ -291,12 +298,24 @@ li code,
 table code,
 p code {
   background-color: var(--code-background);
+  background-color: color-mix(in oklab, var(--code-background), var(--background) 45%);
   border: 1px solid var(--inline-code-border);
   border-radius: 4px;
-  padding: 0px 8px;
+  padding: 0px 6px;
   color: var(--inline-code-accent);
   font-family: var(--font-mono);
   font-size: 0.95em;
+}
+
+/* In the TOC, inline `code` is usually just part of the heading text.
+   Remove the pill styling to keep the sidebar visually quiet. */
+.toc code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 blockquote {
